@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
+<link rel="stylesheet" href="/style2.css">
 <head>
     <title>User List</title>
 </head>
 <body>
-<h2>User List</h2>
+<h2>ユーザリスト</h2>
 <table border="1">
     <tr>
-        <th>Name</th>
-        <th>Password</th>
+        <th>名前</th>
+        <th>パスワード</th>
     </tr>
     <tr th:each="user : ${users}">
         <td th:text="${user['name']}"></td>
